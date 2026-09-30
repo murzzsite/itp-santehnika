@@ -377,3 +377,5 @@ h1, h2, h3, h4 { font-weight: 800; letter-spacing: -0.02em; line-height: 1.12; }
 @media (max-width: 1100px) { .aud { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 900px) { .hero h1 { font-size: 38px; } .section-title { font-size: 32px; } }
 @media (max-width: 560px) { .hero h1 { font-size: 32px; } .section-title { font-size: 28px; } .aud { grid-template-columns: 1fr; } .logo__text small { display: none; } .hero__diagram { aspect-ratio: 1 / 1; } }
+.hero__card { position: static; width: auto; left: auto; bottom: auto; margin-top: 16px; }
+@media (max-width: 900px) { .hero__card { left: auto; right: auto; } }
