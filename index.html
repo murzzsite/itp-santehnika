@@ -3,35 +3,35 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Сибирские Технологии Тепла — обслуживание ИТП и насосов, оборудование в Новосибирске</title>
-<meta name="description" content="Сибирские Технологии Тепла: обслуживание ИТП от 8 000 ₽, ремонт и обслуживание насосного оборудования, поставка сантехнического и насосного оборудования по всей России. Новосибирск, 164 дома на обслуживании.">
+<title>Сибирские Технологии Тепла — обслуживание ИТП и насосов в Новосибирске</title>
+<meta name="description" content="Обслуживаем ИТП и насосное оборудование в Новосибирске: 164 дома на обслуживании. ТО ИТП от 8 000 ₽, ремонт насосов, поставка сантехнического и насосного оборудования по всей России.">
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=3">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans+Condensed:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="home.css?v=4">
 </head>
 <body>
 
 <header class="header" id="header">
   <div class="header__inner">
     <a href="#top" class="logo" aria-label="Сибирские Технологии Тепла">
-      <svg class="logo__mark" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#1466b8"/><path d="M24 9c-5 7-10 12-10 18a10 10 0 0 0 20 0c0-6-5-11-10-18z" fill="#fff"/><path d="M19 28a5 5 0 0 0 5 5" fill="none" stroke="#1466b8" stroke-width="2.5" stroke-linecap="round"/></svg>
-      <span class="logo__text"><b>Сибирские Технологии Тепла</b><small>ИТП · насосы · оборудование</small></span>
+      <svg class="logo__mark" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="6" fill="#0f1e2b"/><path d="M24 8c-5 7-10 12-10 18a10 10 0 0 0 20 0c0-6-5-11-10-18z" fill="#d9461b"/><path d="M14 30h20" stroke="#fff" stroke-width="2.5"/><path d="M17 35h14" stroke="#fff" stroke-width="2.5"/></svg>
+      <span class="logo__text"><b>Сибирские Технологии Тепла</b><small>ИТП, насосы, оборудование</small></span>
     </a>
     <nav class="nav" id="nav">
       <a href="#services">Услуги</a>
       <a href="#included">Что входит</a>
+      <a href="#season">Сезон</a>
       <a href="#prices">Цены</a>
       <a href="#equipment">Оборудование</a>
-      <a href="#process">Как работаем</a>
       <a href="#faq">Вопросы</a>
       <a href="#contact">Контакты</a>
     </nav>
     <div class="header__right">
       <a href="tel:+79628290099" class="header__phone">+7 962 829-00-99</a>
-      <a href="#contact" class="btn btn--primary">Оставить заявку</a>
-      <button class="burger" id="burger" aria-label="Меню"><span></span></button>
+      <a href="#contact" class="btn btn--heat">Получить расчёт</a>
+      <button class="burger" id="burger" aria-label="Меню" aria-expanded="false"><span></span></button>
     </div>
   </div>
 </header>
@@ -40,172 +40,111 @@
 
 <!-- HERO -->
 <section class="hero">
-  <div class="container hero__grid">
+  <div class="wrap hero__grid">
     <div>
-      <p class="section-tag">Новосибирск · поставка по всей России</p>
-      <h1>Обслуживаем ИТП и насосы, поставляем оборудование — <em>чтобы тепло и вода не подводили</em></h1>
-      <p class="hero__lead">164 дома на нашем обслуживании, среди клиентов — один из крупнейших застройщиков Новосибирска. Берём на себя ИТП, ремонт и обслуживание насосного оборудования, а также поставляем сантехническое и насосное оборудование по всей России.</p>
+      <h1>Обслуживаем ИТП и насосы в Новосибирске</h1>
+      <p class="hero__lead">164 дома уже на нашем обслуживании, в том числе у одного из крупнейших застройщиков города. Ремонтируем насосы, поставляем сантехническое и насосное оборудование по всей России.</p>
       <div class="hero__cta">
-        <a href="#contact" class="btn btn--primary">Получить расчёт</a>
-        <a href="https://t.me/Andrey4D" target="_blank" rel="noopener" class="btn btn--outline">Написать в Telegram</a>
+        <a href="#contact" class="btn btn--heat">Получить расчёт</a>
+        <a href="tel:+79628290099" class="hero__phone">+7 962 829-00-99</a>
       </div>
-      <div class="hero__chips">
-        <span class="chip">164 дома на обслуживании</span>
-        <span class="chip">Обслуживание ИТП от 8 000 ₽</span>
-        <span class="chip">Ремонт любых насосов</span>
-        <span class="chip">Оборудование по всей России</span>
-      </div>
+      <dl class="hero__prices">
+        <div><dt>Обслуживание ИТП</dt><dd>от 8 000 ₽</dd></div>
+        <div><dt>Обслуживание насосов</dt><dd>от 3 000 ₽</dd></div>
+        <div><dt>Диагностика насоса</dt><dd>от 800 ₽</dd></div>
+      </dl>
     </div>
-    <div class="hero__visual">
-      <div class="hero__diagram">
-        <svg viewBox="0 0 480 500" role="img" aria-label="Схема индивидуального теплового пункта: теплосеть, теплообменник, насос, здание">
-          <rect class="svg-fill" x="14" y="14" width="452" height="472" rx="22" opacity=".55"/>
-          <text class="svg-txt" x="40" y="62">Теплосеть</text>
-          <path class="svg-pipe svg-pipe--hot" d="M40 92 H150"/>
-          <path class="svg-pipe" d="M40 132 H150"/>
-          <rect class="svg-box" x="150" y="62" width="120" height="100" rx="14"/>
-          <path d="M172 82 L192 142 L212 82 L232 142 L252 82" fill="none" stroke="#1466b8" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
-          <text class="svg-txt" x="160" y="186">Теплообменник</text>
-          <path class="svg-pipe svg-pipe--hot" d="M270 92 H330 V250"/>
-          <path class="svg-pipe" d="M270 132 H380 V250"/>
-          <circle class="svg-box" cx="355" cy="290" r="44"/>
-          <path d="M355 262 A28 28 0 1 1 327 290" fill="none" stroke="#1466b8" stroke-width="3.5" stroke-linecap="round"/>
-          <path d="M347 279 L369 290 L347 301 Z" fill="#1466b8"/>
-          <text class="svg-txt" x="322" y="356">Насос</text>
-          <path class="svg-pipe svg-pipe--hot" d="M330 334 V400 H210"/>
-          <path class="svg-pipe" d="M380 334 V430 H210"/>
-          <rect class="svg-box" x="70" y="330" width="140" height="120" rx="6"/>
-          <g fill="#e6f0fb" stroke="#0f1f33" stroke-width="1.8">
-            <rect x="86" y="348" width="24" height="22" rx="3"/><rect x="118" y="348" width="24" height="22" rx="3"/><rect x="150" y="348" width="24" height="22" rx="3"/>
-            <rect x="86" y="382" width="24" height="22" rx="3"/><rect x="118" y="382" width="24" height="22" rx="3"/><rect x="150" y="382" width="24" height="22" rx="3"/>
-          </g>
-          <rect x="120" y="418" width="30" height="32" rx="3" fill="#1466b8"/>
-          <text class="svg-txt" x="98" y="476">Здание</text>
-          <text class="svg-txt--s svg-txt" x="40" y="222">Регулярное ТО и ремонт</text>
-          <text class="svg-txt--s svg-txt" x="40" y="242">каждого узла — по договору</text>
-        </svg>
-      </div>
-      <aside class="hero__card">
-        <p class="hero__card-tag">Отопительный сезон</p>
-        <h3>Подготовим ИТП и сдадим к сезону</h3>
-        <p>Гидравлические испытания, промывка, настройка автоматики и замена изношенного оборудования.</p>
-        <a href="#contact" class="btn btn--dark">Оставить заявку</a>
-      </aside>
-    </div>
-  </div>
-</section>
 
-<!-- STATS -->
-<section class="stats">
-  <div class="container">
-    <div class="stats__row">
-      <div class="stat"><b>164</b><span>дома на постоянном обслуживании в Новосибирске</span></div>
-      <div class="stat"><b>4 услуги</b><span>ИТП, ремонт и обслуживание насосов, поставка оборудования</span></div>
-      <div class="stat"><b>от 8 000 ₽</b><span>обслуживание ИТП по договору</span></div>
-      <div class="stat"><b>вся Россия</b><span>отправка сантехнического и насосного оборудования</span></div>
-    </div>
-  </div>
-</section>
+    <figure class="sheet">
+      <svg viewBox="0 0 720 470" role="img" aria-label="Схема индивидуального теплового пункта: теплосеть, теплообменник, насос, автоматика и дом">
+        <!-- трубы: основа -->
+        <path class="s-pipe-h" d="M20 130 H250"/>
+        <path class="s-pipe-c" d="M20 210 H250"/>
+        <path class="s-pipe-h" d="M400 130 H604"/>
+        <path class="s-pipe-c" d="M400 210 H604"/>
+        <!-- поток -->
+        <path class="s-flow-h" d="M20 130 H250"/>
+        <path class="s-flow-c" d="M250 210 H20"/>
+        <path class="s-flow-h" d="M400 130 H604"/>
+        <path class="s-flow-c" d="M604 210 H400"/>
 
-<!-- PAIN -->
-<section id="pain">
-  <div class="container">
-    <p class="section-tag">Зачем обслуживание</p>
-    <h2 class="section-title">ИТП работает без внимания — ровно до первой аварии</h2>
-    <p class="section-lead">Тепловой пункт и насосы не требуют ежедневного присмотра, но требуют регулярной работы специалиста. Без неё платить приходится дороже: ремонтом, простоем и жалобами жильцов или арендаторов.</p>
-    <div class="versus">
-      <div class="versus__col">
-        <p class="versus__label">Как это часто бывает</p>
-        <h3>«Пока работает — не трогаем»</h3>
-        <ul>
-          <li>Обслуживание вспоминают только после поломки или жалоб на холод</li>
-          <li>Насосы работают на износ до остановки — потом срочный ремонт и простой</li>
-          <li>Подрядчик по обслуживанию один, поставщик оборудования другой — каждый отвечает только за своё</li>
-          <li>Цену работ узнают по факту, когда узел уже разобран</li>
-          <li>Подготовка к отопительному сезону превращается в аврал</li>
-        </ul>
-      </div>
-      <div class="versus__col versus__col--good">
-        <p class="versus__label">Как работаем мы</p>
-        <h3>График, договор и понятная цена</h3>
-        <ul>
-          <li>Обслуживаем ИТП регулярно, по договору, а не «по звонку»</li>
-          <li>Проверяем насосы раз в квартал и ремонтируем до остановки</li>
-          <li>Обслуживание, ремонт и оборудование — в одних руках</li>
-          <li>Расценки и прайс на оборудование у вас на руках заранее</li>
-          <li>К сезону готовимся и сдаём ИТП энергоснабжающей организации планово</li>
-        </ul>
-      </div>
-    </div>
+        <!-- теплообменник -->
+        <rect class="s-fill" x="250" y="90" width="150" height="160" rx="3"/>
+        <path class="s-ink" d="M276 102V238M296 102V238M316 102V238M336 102V238M356 102V238M376 102V238" opacity=".55"/>
+
+        <!-- клапан с приводом на подаче -->
+        <path class="s-fill" d="M130 118 L154 142 L154 118 L130 142 Z"/>
+        <path class="s-ink" d="M142 130V96"/><rect class="s-fill" x="132" y="82" width="20" height="14" rx="2"/>
+
+        <!-- манометр -->
+        <path class="s-ink" d="M200 130V108"/><circle class="s-fill" cx="200" cy="94" r="14"/><path class="s-ink" d="M200 94L208 86" stroke-width="2"/>
+
+        <!-- датчик температуры на вторичной подаче -->
+        <path class="s-ink" d="M530 130V108"/><circle class="s-fill" cx="530" cy="98" r="11"/><text x="530" y="103" text-anchor="middle" font-family="IBM Plex Sans" font-weight="600" font-size="13" fill="#0f1e2b">T</text>
+
+        <!-- насос на обратке -->
+        <circle class="s-fill" cx="490" cy="210" r="24"/>
+        <path class="s-ink" d="M504 198 L478 210 L504 222 Z" fill="#1f6aa5" stroke="none"/>
+
+        <!-- дом -->
+        <rect class="s-fill" x="604" y="70" width="96" height="190" rx="3"/>
+        <g class="s-ink" stroke-width="1.8">
+          <rect x="620" y="88" width="20" height="20" rx="2"/><rect x="660" y="88" width="20" height="20" rx="2"/>
+          <rect x="620" y="124" width="20" height="20" rx="2"/><rect x="660" y="124" width="20" height="20" rx="2"/>
+          <rect x="620" y="160" width="20" height="20" rx="2"/><rect x="660" y="160" width="20" height="20" rx="2"/>
+          <rect x="620" y="196" width="20" height="20" rx="2"/><rect x="660" y="196" width="20" height="20" rx="2"/>
+        </g>
+
+        <!-- автоматика -->
+        <rect class="s-fill" x="300" y="340" width="230" height="74" rx="3"/>
+        <text class="s-label" x="415" y="372" text-anchor="middle">Автоматика</text>
+        <text class="s-sub" x="415" y="395" text-anchor="middle">регулирование и контроль</text>
+        <path class="s-dash" d="M340 340V312H142V96"/>
+        <path class="s-dash" d="M415 340V250"/><path class="s-dash" d="M415 250H490V234"/>
+        <path class="s-dash" d="M500 340V318H530V109"/>
+
+        <!-- подписи -->
+        <text class="s-label" x="20" y="60">Теплосеть</text>
+        <text class="s-label" x="250" y="64">Теплообменник</text>
+        <text class="s-label" x="604" y="52">Дом</text>
+        <text class="s-label" x="465" y="262" >Насос</text>
+        <text class="s-val s-val--h" x="20" y="116">подача 95 °C</text>
+        <text class="s-val s-val--c" x="20" y="238">обратка 70 °C</text>
+        <text class="s-val s-val--h" x="410" y="116">80 °C</text>
+        <text class="s-val s-val--c" x="410" y="238">60 °C</text>
+      </svg>
+      <figcaption class="sheet__cap"><span><b>Индивидуальный тепловой пункт</b>, схема-пример</span><span>Мы обслуживаем весь узел</span></figcaption>
+    </figure>
   </div>
 </section>
 
 <!-- SERVICES -->
 <section id="services" class="alt">
-  <div class="container">
-    <p class="section-tag">Что мы делаем</p>
-    <h2 class="section-title">Четыре направления — по отдельности или вместе</h2>
-    <p class="section-lead">Можно заказать только поставку оборудования, только обслуживание или всё сразу — тогда за состояние теплового пункта и насосов отвечает один подрядчик.</p>
-    <div class="srv-grid srv-grid--4">
-      <article class="srv">
-        <div class="srv__img srv__img--svg">
-          <svg viewBox="0 0 320 200" aria-hidden="true"><rect x="70" y="50" width="180" height="100" rx="16" fill="#fff" stroke="#0f1f33" stroke-width="3"/><path d="M96 78 L118 124 L140 78 L162 124 L184 78 L206 124 L228 78" fill="none" stroke="#1466b8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 80 H70 M20 120 H70 M250 80 H300 M250 120 H300" stroke="#1466b8" stroke-width="7" stroke-linecap="round"/><path d="M20 80 H70 M250 80 H300" stroke="#e2761b" stroke-width="7" stroke-linecap="round"/></svg>
-        </div>
-        <div class="srv__body">
-          <p class="srv__price">от 8 000 ₽</p>
-          <h3>Обслуживание ИТП</h3>
-          <p>Обслуживание тепломеханического оборудования и автоматики, подготовка и сдача ИТП к отопительному периоду. 164 дома уже на нашем обслуживании.</p>
-          <ul>
-            <li>Осмотр, настройка и мелкий ремонт узла</li>
-            <li>Обслуживание автоматики</li>
-            <li>Гидроиспытания и промывка к сезону</li>
-          </ul>
-        </div>
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Четыре услуги, одна ответственность</h2>
+      <p>Заказывайте по отдельности или вместе: за тепловой пункт, насосы и оборудование отвечает один подрядчик.</p>
+    </div>
+    <div class="rows">
+      <article class="row">
+        <h3>Обслуживание ИТП</h3>
+        <p>Тепломеханика, автоматика и насосы узла по договору. Подготовка и сдача ИТП к отопительному периоду.</p>
+        <div class="row__price">от 8 000 ₽<small>в договоре, по параметрам узла</small></div>
       </article>
-      <article class="srv">
-        <div class="srv__img srv__img--svg">
-          <svg viewBox="0 0 320 200" aria-hidden="true"><path d="M60 150 L130 80 A34 34 0 0 1 176 34 L150 60 L166 76 L192 50 A34 34 0 0 1 148 96 L78 166 Z" fill="#fff" stroke="#0f1f33" stroke-width="3" stroke-linejoin="round"/><circle cx="72" cy="154" r="5" fill="#1466b8"/><path d="M220 60 H290 M220 100 H290 M220 140 H290" stroke="#1466b8" stroke-width="6" stroke-linecap="round"/><circle cx="220" cy="60" r="7" fill="#e2761b"/><circle cx="250" cy="100" r="7" fill="#e2761b"/><circle cx="270" cy="140" r="7" fill="#e2761b"/></svg>
-        </div>
-        <div class="srv__body">
-          <p class="srv__price">диагностика от 800 ₽ · ремонт от 2 700 ₽</p>
-          <h3>Ремонт насосного оборудования</h3>
-          <p>Ремонтируем любое насосное оборудование: бытовое, промышленное, погружное, скважинное, консольные агрегаты, насосные станции.</p>
-          <ul>
-            <li>Диагностика в сервисном центре</li>
-            <li>Выезд на объект</li>
-            <li>Ввод в эксплуатацию</li>
-          </ul>
-        </div>
+      <article class="row">
+        <h3>Ремонт насосов</h3>
+        <p>Любое насосное оборудование: бытовое, промышленное, погружное, скважинное, консольные агрегаты, насосные станции.</p>
+        <div class="row__price">от 2 700 ₽<small>диагностика от 800 ₽</small></div>
       </article>
-      <article class="srv">
-        <div class="srv__img srv__img--svg">
-          <svg viewBox="0 0 320 200" aria-hidden="true"><circle cx="120" cy="100" r="52" fill="#fff" stroke="#0f1f33" stroke-width="3"/><path d="M120 62 A38 38 0 1 1 82 100" fill="none" stroke="#1466b8" stroke-width="5" stroke-linecap="round"/><path d="M108 88 L138 100 L108 112 Z" fill="#1466b8"/><path d="M172 100 H230" stroke="#1466b8" stroke-width="9" stroke-linecap="round"/><rect x="226" y="72" width="16" height="56" rx="4" fill="#fff" stroke="#0f1f33" stroke-width="3"/><rect x="258" y="84" width="34" height="32" rx="6" fill="#e6f0fb" stroke="#0f1f33" stroke-width="3"/></svg>
-        </div>
-        <div class="srv__body">
-          <p class="srv__price">от 3 000 ₽</p>
-          <h3>Обслуживание насосного оборудования</h3>
-          <p>Плановые проверки насосов и электродвигателей раз в квартал, чтобы ловить износ до остановки, а не после неё.</p>
-          <ul>
-            <li>Проверка параметров в рабочем режиме</li>
-            <li>Подшипники, уплотнения, защита по току</li>
-            <li>Разборка и замена деталей по мере необходимости</li>
-          </ul>
-        </div>
+      <article class="row">
+        <h3>Обслуживание насосов</h3>
+        <p>Плановые проверки насосов и электродвигателей раз в квартал, чтобы находить износ до остановки.</p>
+        <div class="row__price">от 3 000 ₽<small>проверки раз в квартал</small></div>
       </article>
-      <article class="srv">
-        <div class="srv__img srv__img--svg">
-          <svg viewBox="0 0 320 200" aria-hidden="true"><rect x="60" y="70" width="110" height="80" rx="8" fill="#fff" stroke="#0f1f33" stroke-width="3"/><path d="M60 100 H170" stroke="#0f1f33" stroke-width="3"/><circle cx="215" cy="112" r="34" fill="#fff" stroke="#0f1f33" stroke-width="3"/><path d="M215 90 A22 22 0 1 1 193 112" fill="none" stroke="#1466b8" stroke-width="4" stroke-linecap="round"/><path d="M208 104 L226 112 L208 120 Z" fill="#1466b8"/><path d="M20 90 H60 M170 130 H181" stroke="#1466b8" stroke-width="7" stroke-linecap="round"/><path d="M250 112 H300" stroke="#1466b8" stroke-width="7" stroke-linecap="round"/></svg>
-        </div>
-        <div class="srv__body">
-          <p class="srv__price">прайс-лист · доставка по России</p>
-          <h3>Продажа оборудования</h3>
-          <p>Сантехническое и насосное оборудование, оборудование для ИТП. Подберём под задачу и отправим в любой регион.</p>
-          <ul>
-            <li>Насосы, арматура, трубы и фитинги</li>
-            <li>Отопление, ГВС, водоснабжение</li>
-            <li>Каталог с ценами — в прайс-листе</li>
-          </ul>
-        </div>
+      <article class="row">
+        <h3>Поставка оборудования</h3>
+        <p>Сантехническое и насосное оборудование, оборудование для ИТП. Подберём под задачу и отправим в любой регион.</p>
+        <div class="row__price">по прайс-листу<small>отправка по всей России</small></div>
       </article>
     </div>
   </div>
@@ -213,268 +152,206 @@
 
 <!-- INCLUDED -->
 <section id="included">
-  <div class="container">
-    <p class="section-tag">Что входит в обслуживание</p>
-    <h2 class="section-title">Подробный перечень работ — без «и прочего»</h2>
-    <p class="section-lead">Вы заранее видите, за что платите. Обслуживание ИТП включает обслуживание тепломеханики, автоматики и насосного оборудования узла.</p>
-    <div class="incl">
-      <div class="incl__card">
-        <p class="incl__tag">1</p>
-        <h3>Тепломеханическое оборудование ИТП</h3>
-        <ul>
-          <li>Осмотр оборудования теплового пункта: течи, подтёки, состояние изоляции</li>
-          <li>Контроль работоспособности и настройка: запорная арматура, предохранительный и обратные клапаны, регуляторы давления и температуры ГВС, манометры и термометры</li>
-          <li>Мелкий ремонт: протяжка фланцев и замена прокладок, устранение течей резьбовых соединений, набивка сальников, прочистка фильтров и грязевиков, частичное восстановление изоляции</li>
-          <li>Поверка или замена средств измерений</li>
-          <li>Подготовка и сдача ИТП к отопительному периоду: гидравлические испытания, гидропневматическая промывка, нумерация оборудования, обозначение арматуры и окраска трубопроводов</li>
-          <li>Консультации по эксплуатации и режимам теплопотребления</li>
-        </ul>
-        <p class="incl__note"><b>Кислотная промывка теплообменников — скидка 50% на работы.</b></p>
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Что входит в обслуживание ИТП</h2>
+      <p>Конкретный перечень, который фиксируется в договоре. Без формулировок вроде «и прочие работы».</p>
+    </div>
+    <div class="spec">
+      <div class="acc">
+        <details open>
+          <summary>Тепломеханика <span>6 пунктов</span></summary>
+          <ul>
+            <li>Осмотр оборудования: течи, подтёки, состояние изоляции</li>
+            <li>Проверка и настройка запорной арматуры, предохранительного и обратных клапанов, регуляторов давления и температуры ГВС, манометров и термометров</li>
+            <li>Мелкий ремонт: протяжка фланцев, замена прокладок, устранение течей резьбовых соединений, набивка сальников</li>
+            <li>Прочистка фильтров и грязевиков, частичное восстановление изоляции</li>
+            <li>Поверка или замена средств измерений</li>
+            <li>Консультации по эксплуатации и режимам теплопотребления</li>
+          </ul>
+        </details>
+        <details>
+          <summary>Автоматика <span>5 пунктов</span></summary>
+          <ul>
+            <li>Контроль смесительных, циркуляционных и повысительных насосов, датчиков температуры и давления, электрощитов</li>
+            <li>Настройка автоматического регулирования в начале отопительного периода и корректировка режима в течение сезона</li>
+            <li>Проверка режимов теплопотребления по графикам, контроль температуры в обратном трубопроводе</li>
+            <li>Корректировка ограничения расхода теплоносителя по лимиту договора теплоснабжения</li>
+            <li>Мелкий ремонт автоматики: чистка, регулировка, устранение повреждений без замены основных узлов</li>
+          </ul>
+        </details>
+        <details>
+          <summary>Насосное оборудование <span>раз в квартал</span></summary>
+          <ul>
+            <li>Проверка параметров насосов и электродвигателей в рабочем режиме с устранением неполадок</li>
+            <li>Состояние предохранителей, конденсаторов, подшипников, торцевых уплотнений, чистота колпака вентилятора двигателя</li>
+            <li>Проверка клеммных соединений и защиты двигателя по току</li>
+            <li>По мере необходимости: разборка и сборка насоса с прочисткой, заменой рабочего колеса, торцевого уплотнения, подшипников</li>
+          </ul>
+        </details>
       </div>
-      <div class="incl__card">
-        <p class="incl__tag">2</p>
-        <h3>Автоматика ИТП</h3>
-        <ul>
-          <li>Контроль смесительных, циркуляционных и повысительных насосов, датчиков температуры и давления, электрощитов управления насосными группами</li>
-          <li>Настройка автоматического регулирования в начале отопительного периода и корректировка режима в течение сезона</li>
-          <li>Проверка режимов теплопотребления по графикам, контроль температуры в обратном трубопроводе</li>
-          <li>Корректировка ограничения расхода теплоносителя по лимиту договора теплоснабжения</li>
-          <li>Мелкий ремонт автоматики: чистка, регулировка, устранение повреждений без замены основных узлов</li>
-        </ul>
+      <aside class="aside">
+        <h3>Скидка 50% на кислотную промывку теплообменников</h3>
+        <p>Действует на работы в рамках обслуживания. Промывка возвращает теплообменнику мощность и снижает нагрузку на насосы.</p>
+        <p class="small">Ремонт, который требует демонтажа оборудования и передачи его в специализированную организацию, оформляется дополнительным соглашением к договору.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- SEASON -->
+<section id="season" class="alt">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Как мы ведём узел в течение года</h2>
+      <p>Работы идут по сезонному циклу, чтобы к началу отопления ИТП был готов и сдан.</p>
+    </div>
+    <div class="season">
+      <div class="phase">
+        <h3>До сезона</h3>
+        <p>Мелкий ремонт, промывка, гидравлические испытания, гидропневматическая промывка, нумерация оборудования, окраска трубопроводов. Сдача ИТП к отопительному периоду.</p>
       </div>
-      <div class="incl__card">
-        <p class="incl__tag">3</p>
-        <h3>Насосное оборудование</h3>
-        <ul>
-          <li>Раз в квартал: проверка параметров насосов и электродвигателей в рабочем режиме с устранением неполадок</li>
-          <li>Раз в квартал: состояние предохранителей, конденсаторов, подшипников, торцевых уплотнений, чистота колпака вентилятора двигателя</li>
-          <li>Раз в квартал: проверка клеммных соединений и защиты двигателя по току</li>
-          <li>По мере необходимости: разборка и сборка насоса с прочисткой, заменой рабочего колеса, торцевого уплотнения, подшипников</li>
-        </ul>
+      <div class="phase">
+        <h3>Старт отопления</h3>
+        <p>Настройка автоматического регулирования теплопотребления и проверка режимов по температурным графикам.</p>
+      </div>
+      <div class="phase">
+        <h3>В течение сезона</h3>
+        <p>Корректировка режимов, контроль температуры в обратном трубопроводе, ограничение расхода по лимиту договора теплоснабжения.</p>
+      </div>
+      <div class="phase">
+        <h3>Каждый квартал</h3>
+        <p>Проверка насосов и электродвигателей: параметры, подшипники, уплотнения, клеммы, защита по току.</p>
       </div>
     </div>
-    <p class="terms"><b>Важно:</b> ремонт, который требует демонтажа оборудования и передачи его в специализированную организацию с последующим монтажом, оформляется дополнительным соглашением к договору.</p>
   </div>
 </section>
 
 <!-- PRICES -->
-<section id="prices" class="alt">
-  <div class="container">
-    <p class="section-tag">Цены</p>
-    <h2 class="section-title">Цены открыты — до выезда специалиста</h2>
-    <p class="section-lead">Стоимость обслуживания фиксируется в договоре. Расценки на отдельные работы и прайс на оборудование — ниже и по запросу в мессенджере.</p>
-
-    <div class="tariffs">
-      <div class="tariff tariff--hit">
-        <span class="tariff__badge">Основная услуга</span>
-        <p class="tariff__name">Обслуживание ИТП</p>
-        <p class="tariff__price">от 8 000 <small>₽</small></p>
-        <p class="tariff__unit">по договору, зависит от узла и объёма</p>
-        <p>Тепломеханика, автоматика и насосы ИТП по перечню выше. Точную цену называем после уточнения параметров узла.</p>
-      </div>
-      <div class="tariff">
-        <p class="tariff__name">Обслуживание насосов</p>
-        <p class="tariff__price">от 3 000 <small>₽</small></p>
-        <p class="tariff__unit">плановые проверки раз в квартал</p>
-        <p>Проверка параметров, подшипников, уплотнений и защиты двигателя. Разборка и замена деталей — по мере необходимости.</p>
-      </div>
-      <div class="tariff">
-        <p class="tariff__name">Ремонт насосов</p>
-        <p class="tariff__price">от 800 <small>₽</small></p>
-        <p class="tariff__unit">диагностика; ремонт — от 2 700 ₽</p>
-        <p>Диагностика в сервисном центре, ремонт любого насосного оборудования, выезд на объект. Запчасти оплачиваются отдельно.</p>
-      </div>
+<section id="prices">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Цены открыты до выезда специалиста</h2>
+      <p>Обслуживание фиксируется в договоре. Расценки на отдельные работы по насосам — ниже, прайс на оборудование — для скачивания.</p>
     </div>
 
-    <details class="pricelist">
-      <summary>Расценки на работы по насосному оборудованию</summary>
-      <div class="pricelist__body">
-        <table class="ptable">
-          <tbody>
-            <tr class="ptable__h"><td colspan="2">Диагностика и ремонт в сервисном центре</td></tr>
-            <tr><td>Диагностика: бытовые насосы до 1,1 кВт</td><td>800 ₽</td></tr>
-            <tr><td>Диагностика: промышленная серия до 3 кВт</td><td>2 700 ₽</td></tr>
-            <tr><td>Диагностика: погружные насосы для стоков до 4 кВт</td><td>5 100 ₽</td></tr>
-            <tr><td>Диагностика: скважинные насосы бытовой серии до 3 кВт</td><td>3 780 ₽</td></tr>
-            <tr><td>Ремонт: бытовые насосы до 1,1 кВт</td><td>от 2 700 ₽</td></tr>
-            <tr><td>Ремонт: промышленная серия до 3 кВт</td><td>от 4 860 ₽</td></tr>
-            <tr><td>Диагностика станции пожаротушения</td><td>10 000 ₽</td></tr>
-            <tr class="ptable__h"><td colspan="2">Выезд</td></tr>
-            <tr><td>Выезд на диагностику</td><td>3 000 ₽</td></tr>
-            <tr><td>Выезд на удалённые объекты (за 1 км от сервисного центра до объекта и обратно)</td><td>150 ₽/км</td></tr>
-            <tr><td>Надбавка за грязные работы</td><td>5 000 ₽</td></tr>
-            <tr class="ptable__h"><td colspan="2">Ввод в эксплуатацию</td></tr>
-            <tr><td>Установка повышения давления (УПД), 1–2 насоса, до 15 кВт</td><td>10 500 ₽</td></tr>
-            <tr><td>УПД, 1–2 насоса, свыше 15 кВт</td><td>18 000 ₽</td></tr>
-            <tr><td>УПД, 3–6 насосов, до 15 кВт</td><td>15 650 ₽</td></tr>
-            <tr><td>УПД, 3–6 насосов, свыше 15 кВт</td><td>26 950 ₽</td></tr>
-            <tr><td>Шкаф управления, 1–3 насоса</td><td>9 500 ₽</td></tr>
-            <tr><td>Шкаф управления, 4–6 насосов</td><td>12 500 ₽</td></tr>
-            <tr><td>Насосы для отвода сточных вод DN32–DN65</td><td>17 800 ₽</td></tr>
-            <tr><td>Насосы для отвода сточных вод более DN65</td><td>27 840 ₽</td></tr>
-            <tr><td>Ин-лайн и блочные насосы без частотного привода</td><td>от 9 440 ₽</td></tr>
-            <tr><td>Ин-лайн и блочные насосы со встроенной электроникой</td><td>от 18 000 ₽</td></tr>
-            <tr><td>Консольные агрегаты на раме до 15 кВт</td><td>23 200 ₽</td></tr>
-            <tr><td>Консольные агрегаты на раме до 37 кВт</td><td>29 080 ₽</td></tr>
-          </tbody>
-        </table>
-        <p class="price-note">Цена указана за одну услугу и может меняться в зависимости от технической сложности оборудования и автоматики. Стоимость ремонта зависит от объёма работ, подробный расчёт даёт сотрудник сервисного центра, запчасти оплачиваются отдельно.</p>
-      </div>
-    </details>
+    <dl class="big-prices">
+      <div><dt>Обслуживание ИТП</dt><dd>от 8 000 ₽</dd><small>в зависимости от узла и объёма работ</small></div>
+      <div><dt>Обслуживание насосов</dt><dd>от 3 000 ₽</dd><small>плановые проверки раз в квартал</small></div>
+      <div><dt>Ремонт насоса</dt><dd>от 2 700 ₽</dd><small>диагностика от 800 ₽, запчасти отдельно</small></div>
+    </dl>
 
-    <div class="furniture-row" style="margin-top:34px">
+    <div class="plist">
+      <div>
+        <h3>Диагностика и ремонт</h3>
+        <div class="pl"><span>Диагностика: бытовые насосы до 1,1 кВт</span><span>800 ₽</span></div>
+        <div class="pl"><span>Диагностика: промышленная серия до 3 кВт</span><span>2 700 ₽</span></div>
+        <div class="pl"><span>Диагностика: погружные для стоков до 4 кВт</span><span>5 100 ₽</span></div>
+        <div class="pl"><span>Диагностика: скважинные бытовой серии до 3 кВт</span><span>3 780 ₽</span></div>
+        <div class="pl"><span>Диагностика станции пожаротушения</span><span>10 000 ₽</span></div>
+        <div class="pl"><span>Ремонт: бытовые насосы до 1,1 кВт</span><span>от 2 700 ₽</span></div>
+        <div class="pl"><span>Ремонт: промышленная серия до 3 кВт</span><span>от 4 860 ₽</span></div>
+        <h3>Выезд</h3>
+        <div class="pl"><span>Выезд на диагностику</span><span>3 000 ₽</span></div>
+        <div class="pl"><span>Удалённые объекты, за 1 км от сервисного центра и обратно</span><span>150 ₽/км</span></div>
+        <div class="pl"><span>Надбавка за грязные работы</span><span>5 000 ₽</span></div>
+      </div>
+      <div>
+        <h3>Ввод в эксплуатацию</h3>
+        <div class="pl"><span>Установка повышения давления (УПД), 1–2 насоса, до 15 кВт</span><span>10 500 ₽</span></div>
+        <div class="pl"><span>УПД, 1–2 насоса, свыше 15 кВт</span><span>18 000 ₽</span></div>
+        <div class="pl"><span>УПД, 3–6 насосов, до 15 кВт</span><span>15 650 ₽</span></div>
+        <div class="pl"><span>УПД, 3–6 насосов, свыше 15 кВт</span><span>26 950 ₽</span></div>
+        <div class="pl"><span>Шкаф управления, 1–3 насоса</span><span>9 500 ₽</span></div>
+        <div class="pl"><span>Шкаф управления, 4–6 насосов</span><span>12 500 ₽</span></div>
+        <div class="pl"><span>Насосы для отвода сточных вод DN32–DN65</span><span>17 800 ₽</span></div>
+        <div class="pl"><span>Насосы для отвода сточных вод более DN65</span><span>27 840 ₽</span></div>
+        <div class="pl"><span>Ин-лайн и блочные насосы без частотного привода</span><span>от 9 440 ₽</span></div>
+        <div class="pl"><span>Ин-лайн и блочные насосы со встроенной электроникой</span><span>от 18 000 ₽</span></div>
+        <div class="pl"><span>Консольные агрегаты на раме до 15 кВт</span><span>23 200 ₽</span></div>
+        <div class="pl"><span>Консольные агрегаты на раме до 37 кВт</span><span>29 080 ₽</span></div>
+      </div>
+    </div>
+    <p class="pnote">Цена указана за одну услугу и может меняться в зависимости от технической сложности оборудования и автоматики. Стоимость ремонта зависит от объёма работ: подробный расчёт даёт специалист сервисного центра, запчасти оплачиваются отдельно.</p>
+
+    <div class="download">
       <div>
         <h3>Прайс-лист на оборудование</h3>
-        <p>Каталог сантехнического и насосного оборудования с ценами — скачайте файл (Excel, около 25 МБ) или запросите актуальную версию в мессенджере.</p>
+        <p>Каталог сантехнического и насосного оборудования с ценами. Файл Excel, около 25 МБ. Актуальную версию можно запросить в мессенджере.</p>
       </div>
-      <a href="files/price-oborudovanie.xlsx" download class="btn btn--primary">Скачать прайс-лист</a>
+      <a href="files/price-oborudovanie.xlsx" download class="btn btn--heat">Скачать прайс-лист</a>
     </div>
   </div>
 </section>
 
 <!-- EQUIPMENT -->
-<section id="equipment">
-  <div class="container">
-    <p class="section-tag">Оборудование</p>
-    <h2 class="section-title">Поставка сантехнического и насосного оборудования по всей России</h2>
-    <p class="section-lead">Широкий каталог — от насосов и арматуры до отопления и сантехники. Поможем подобрать позиции под ваш узел и отправим в любой регион.</p>
-    <div class="aud">
-      <div class="aud__item">
-        <div class="aud__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><path d="M12 7a5 5 0 1 1-5 5"/><path d="m10.5 10 3 2-3 2z"/></svg></div>
-        <h3>Насосное оборудование</h3>
-        <p>Циркуляционные, повышения давления, фланцевые, многоступенчатые, скважинные, дренажные и фекальные насосы, насосные станции, гидроаккумуляторы.</p>
+<section id="equipment" class="alt">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Оборудование под ваш узел, отправка по всей России</h2>
+      <p>Широкий каталог от насосов и арматуры до отопления и сантехники. Поможем подобрать позиции и уточним наличие.</p>
+    </div>
+    <div class="eq">
+      <div>
+        <h3>Насосы</h3>
+        <p>Циркуляционные, повышения давления, фланцевые, многоступенчатые, скважинные, дренажные и фекальные, насосные станции, гидроаккумуляторы.</p>
       </div>
-      <div class="aud__item">
-        <div class="aud__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16"/><path d="M8 6v12M16 6v12"/><path d="M6 5h4M14 5h4"/></svg></div>
+      <div>
         <h3>Арматура</h3>
         <p>Задвижки, дисковые затворы, шаровые краны, предохранительные и регулирующие клапаны, вентили, воздухоотводчики, грязевики.</p>
       </div>
-      <div class="aud__item">
-        <div class="aud__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h12a3 3 0 0 1 3 3v2a3 3 0 0 0 3 3"/><path d="M3 12h9"/><path d="M3 16h6"/></svg></div>
+      <div>
         <h3>Трубы и фитинги</h3>
-        <p>Полипропилен, металлопластик, полиэтилен, сталь и чугун, латунные фитинги, коллекторы, крепёж и уплотнение соединений.</p>
+        <p>Полипропилен, металлопластик, полиэтилен, сталь и чугун, латунные фитинги, коллекторы, крепёж.</p>
       </div>
-      <div class="aud__item">
-        <div class="aud__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c-2.5 3.5-5 6-5 9a5 5 0 0 0 10 0c0-3-2.5-5.5-5-9z"/></svg></div>
-        <h3>Отопление и водоснабжение</h3>
-        <p>Радиаторы, котлы, бойлеры и водонагреватели, расширительные баки, полотенцесушители, тёплый пол, фильтры, приборы учёта, сантехника и смесители.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- OFFERS -->
-<section id="offers" class="alt">
-  <div class="container">
-    <p class="section-tag">Почему мы</p>
-    <h2 class="section-title">Шесть причин доверить ИТП нам</h2>
-    <p class="section-lead">Не общие слова про «качество и надёжность», а то, что вы получаете на практике.</p>
-    <div class="offer-grid">
-      <div class="offer-card">
-        <div class="offer-card__num">01</div>
-        <h3>164 дома на обслуживании</h3>
-        <p>Мы работаем с действующими узлами каждый день, а не только продаём оборудование. Среди клиентов — один из крупнейших застройщиков Новосибирска.</p>
-      </div>
-      <div class="offer-card">
-        <div class="offer-card__num">02</div>
-        <h3>Подробный перечень работ</h3>
-        <p>В договоре — конкретный список: что проверяем, что настраиваем, что чиним и как часто. Без размытых формулировок.</p>
-      </div>
-      <div class="offer-card">
-        <div class="offer-card__num">03</div>
-        <h3>Всё в одних руках</h3>
-        <p>ИТП, насосы, ремонт и оборудование. Не придётся искать отдельно мастера, сервис и поставщика.</p>
-      </div>
-      <div class="offer-card offer-card--gift">
-        <div class="offer-card__num">04</div>
-        <h3>Скидка 50% на промывку</h3>
-        <p>Кислотная промывка теплообменников в рамках обслуживания — со скидкой 50% на работы.</p>
-      </div>
-      <div class="offer-card">
-        <div class="offer-card__num">05</div>
-        <h3>Сдача ИТП к сезону</h3>
-        <p>Гидроиспытания, промывка, нумерация и окраска — готовим и сдаём ИТП энергоснабжающей организации.</p>
-      </div>
-      <div class="offer-card">
-        <div class="offer-card__num">06</div>
-        <h3>Цены и прайс открыты</h3>
-        <p>Расценки на работы — на сайте, прайс-лист на оборудование — для скачивания. Бюджет понятен заранее.</p>
+      <div>
+        <h3>Отопление и вода</h3>
+        <p>Радиаторы, котлы, бойлеры и водонагреватели, расширительные баки, полотенцесушители, фильтры, приборы учёта, сантехника.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- PROCESS -->
-<section id="process">
-  <div class="container">
-    <p class="section-tag">Как мы работаем</p>
-    <h2 class="section-title">От заявки до обслуживания — шесть понятных шагов</h2>
-    <p class="section-lead">Вы всегда знаете, что происходит и что будет дальше.</p>
-    <div class="steps">
-      <div class="step">
-        <span class="step__n">1</span>
-        <h3>Заявка</h3>
-        <p>Оставляете заявку на сайте, пишете в мессенджер или звоните: что нужно — обслуживание, ремонт или оборудование.</p>
-      </div>
-      <div class="step">
-        <span class="step__n">2</span>
-        <h3>Уточняем объект</h3>
-        <p>Узнаём адрес, тип объекта, состояние ИТП и насосов, чтобы предложить подходящий вариант.</p>
-      </div>
-      <div class="step">
-        <span class="step__n">3</span>
-        <h3>Расчёт</h3>
-        <p>Называем стоимость по расценкам и отправляем прайс на оборудование — бюджет понятен заранее.</p>
-      </div>
-      <div class="step">
-        <span class="step__n">4</span>
-        <h3>Договор</h3>
-        <p>Фиксируем перечень работ, периодичность и стоимость обслуживания.</p>
-      </div>
-      <div class="step">
-        <span class="step__n">5</span>
-        <h3>Работы или поставка</h3>
-        <p>Выезжаем на объект, ремонтируем, настраиваем или отправляем подобранное оборудование.</p>
-      </div>
-      <div class="step">
-        <span class="step__n">6</span>
-        <h3>Регулярное обслуживание</h3>
-        <p>Приезжаем по графику, проверяем узел и насосы раз в квартал и готовим ИТП к сезону.</p>
-      </div>
-    </div>
-    <p class="terms"><b>Сроки:</b> зависят от объекта и наличия оборудования — называем после уточнения деталей.</p>
+<!-- PROOF -->
+<section>
+  <div class="wrap proof">
+    <h2>Почему нам доверяют тепловые пункты</h2>
+    <ul>
+      <li><b>164 дома на обслуживании</b><span>Мы работаем с действующими узлами каждый день, а не только продаём оборудование. Среди клиентов один из крупнейших застройщиков Новосибирска.</span></li>
+      <li><b>Один подрядчик на весь узел</b><span>ИТП, насосы, ремонт и оборудование. Не нужно искать отдельно мастера, сервис и поставщика.</span></li>
+      <li><b>Перечень работ и цены известны заранее</b><span>В договоре конкретный список: что проверяем, что настраиваем, что чиним и как часто. Расценки на сайте.</span></li>
+    </ul>
   </div>
 </section>
 
 <!-- FAQ -->
 <section id="faq" class="alt">
-  <div class="container">
-    <p class="section-tag">Вопросы</p>
-    <h2 class="section-title">Отвечаем на частые вопросы</h2>
-    <div class="faq" style="margin-top:36px">
-      <details class="faq__item">
+  <div class="wrap">
+    <div class="section-head"><h2>Частые вопросы</h2></div>
+    <div class="faq">
+      <details>
         <summary>Сколько стоит обслуживание ИТП?</summary>
-        <p>От 8 000 ₽. Итоговая стоимость зависит от узла и объёма работ и фиксируется в договоре. Мы называем её после уточнения параметров вашего ИТП.</p>
+        <p>От 8 000 ₽. Итог зависит от узла и объёма работ и фиксируется в договоре. Называем стоимость после уточнения параметров вашего ИТП.</p>
       </details>
-      <details class="faq__item">
-        <summary>Что входит в обслуживание ИТП?</summary>
-        <p>Обслуживание тепломеханического оборудования (осмотр, настройка, мелкий ремонт), обслуживание автоматики и насосного оборудования, подготовка и сдача ИТП к отопительному периоду, консультации по режимам. Полный перечень — в разделе «Что входит» выше.</p>
+      <details>
+        <summary>Как часто вы проверяете насосы?</summary>
+        <p>Раз в квартал: параметры в рабочем режиме, подшипники, уплотнения, клеммы и защита двигателя. Разборку и замену деталей выполняем по мере необходимости. Обслуживание насосов стоит от 3 000 ₽.</p>
       </details>
-      <details class="faq__item">
-        <summary>Как часто проверяются насосы?</summary>
-        <p>Плановые проверки насосов и электродвигателей выполняются раз в квартал. Разборка, замена рабочего колеса, торцевого уплотнения и подшипников — по мере необходимости. Обслуживание насосного оборудования стоит от 3 000 ₽.</p>
-      </details>
-      <details class="faq__item">
+      <details>
         <summary>Ремонтируете ли вы любые насосы?</summary>
-        <p>Да, мы ремонтируем любое насосное оборудование: бытовое, промышленное, погружное, скважинное, консольные агрегаты. Диагностика в сервисном центре — от 800 ₽, ремонт — от 2 700 ₽, запчасти оплачиваются отдельно.</p>
+        <p>Да, любое насосное оборудование: бытовое, промышленное, погружное, скважинное, консольные агрегаты. Диагностика от 800 ₽, ремонт от 2 700 ₽, запчасти оплачиваются отдельно.</p>
       </details>
-      <details class="faq__item">
-        <summary>Можно ли просто купить оборудование и отправите ли вы в другой город?</summary>
-        <p>Да. Оборудование можно приобрести отдельно, без обслуживания. Отправляем по всей России. Прайс-лист можно скачать на сайте или запросить актуальную версию.</p>
+      <details>
+        <summary>Можно ли купить оборудование без обслуживания и отправите ли в другой город?</summary>
+        <p>Да, оборудование продаём отдельно и отправляем по всей России. Прайс-лист можно скачать на сайте или запросить актуальную версию.</p>
       </details>
-      <details class="faq__item">
-        <summary>Обслуживание ИТП выполняется только в Новосибирске?</summary>
-        <p>Обслуживание ИТП и выездные работы мы ведём в Новосибирске. Поставка оборудования и ремонт насосов в сервисном центре доступны клиентам из других регионов — уточните детали в мессенджере.</p>
+      <details>
+        <summary>Обслуживаете ли вы ИТП за пределами Новосибирска?</summary>
+        <p>Обслуживание ИТП и выездные работы мы ведём в Новосибирске. Поставка оборудования и ремонт насосов в сервисном центре доступны клиентам из других регионов. Уточните детали в мессенджере.</p>
+      </details>
+      <details>
+        <summary>Что делать, если ремонт требует демонтажа оборудования?</summary>
+        <p>Если насос или узел нужно демонтировать и передать в специализированную организацию, а затем смонтировать обратно, работы оформляются дополнительным соглашением к договору.</p>
       </details>
     </div>
   </div>
@@ -482,19 +359,19 @@
 
 <!-- CONTACT -->
 <section id="contact">
-  <div class="container contact__grid">
+  <div class="wrap contact__grid">
     <form class="form leadForm" id="leadForm" novalidate>
-      <h3>Оставить заявку</h3>
-      <p class="form__sub">Расскажите, что нужно, — мы свяжемся, уточним детали по объекту и сделаем расчёт.</p>
+      <h3>Получить расчёт</h3>
+      <p class="form__sub">Расскажите, что нужно. Мы свяжемся, уточним детали по объекту и назовём стоимость.</p>
       <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
       <div class="field-row">
         <div class="field">
-          <label for="f-name">Ваше имя</label>
-          <input type="text" id="f-name" name="name" placeholder="Как к вам обращаться" required>
+          <label for="f-name">Имя</label>
+          <input type="text" id="f-name" name="name" placeholder="Как к вам обращаться" required autocomplete="name">
         </div>
         <div class="field">
           <label for="f-phone">Телефон</label>
-          <input type="tel" id="f-phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+          <input type="tel" id="f-phone" name="phone" placeholder="+7 (___) ___-__-__" required autocomplete="tel">
         </div>
       </div>
       <div class="field-row">
@@ -537,34 +414,21 @@
         </div>
       </div>
       <div class="field">
-        <label for="f-comment">Комментарий <span style="font-weight:400;color:var(--clr-text-soft)">(необязательно)</span></label>
+        <label for="f-comment">Комментарий <span style="font-weight:400;color:var(--soft)">(необязательно)</span></label>
         <textarea id="f-comment" name="comment" rows="3" placeholder="Сколько объектов, какое оборудование нужно, что случилось с ИТП или насосом"></textarea>
       </div>
-      <button type="submit" class="btn btn--primary btn--block">Отправить заявку</button>
+      <button type="submit" class="btn btn--heat btn--block">Отправить заявку</button>
       <p class="form__agree">Нажимая кнопку, вы соглашаетесь с <a href="privacy.html" target="_blank">политикой обработки персональных данных</a>.</p>
     </form>
 
-    <div>
-      <p class="section-tag">Контакты</p>
-      <h2 class="section-title" style="font-size:34px">Позвоните или напишите — ответим и сделаем расчёт</h2>
-      <div class="contacts" style="margin-top:28px">
-        <div class="contact-card">
-          <div class="contact-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></div>
-          <div><small>Телефон · WhatsApp · MAX · Telegram</small><b><a href="tel:+79628290099">+7 962 829-00-99</a></b></div>
-        </div>
-        <div class="contact-card">
-          <div class="contact-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4z"/><path d="M22 2 11 13"/></svg></div>
-          <div><small>Telegram</small><b><a href="https://t.me/Andrey4D" target="_blank" rel="noopener">@Andrey4D</a></b></div>
-        </div>
-        <div class="contact-card">
-          <div class="contact-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v12H8l-4 4z"/></svg></div>
-          <div><small>ВКонтакте</small><b><a href="https://vk.ru/a.mol.pump" target="_blank" rel="noopener">vk.ru/a.mol.pump</a></b></div>
-        </div>
-        <div class="contact-card">
-          <div class="contact-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
-          <div><small>Где работаем</small><b>Новосибирск. Оборудование отправляем по всей России</b></div>
-        </div>
-      </div>
+    <div class="contacts">
+      <h3>Или свяжитесь напрямую</h3>
+      <dl>
+        <div><dt>Телефон, WhatsApp, MAX, Telegram</dt><dd class="num"><a href="tel:+79628290099">+7 962 829-00-99</a></dd></div>
+        <div><dt>Telegram</dt><dd><a href="https://t.me/Andrey4D" target="_blank" rel="noopener">@Andrey4D</a></dd></div>
+        <div><dt>ВКонтакте</dt><dd><a href="https://vk.ru/a.mol.pump" target="_blank" rel="noopener">vk.ru/a.mol.pump</a></dd></div>
+        <div><dt>Где работаем</dt><dd>Новосибирск. Оборудование отправляем по всей России</dd></div>
+      </dl>
     </div>
   </div>
 </section>
@@ -572,7 +436,7 @@
 </main>
 
 <footer class="footer">
-  <div class="container footer__inner">
+  <div class="wrap footer__inner">
     <div>© <span id="year">2026</span> Сибирские Технологии Тепла. Новосибирск.</div>
     <div class="footer__links">
       <a href="privacy.html">Политика конфиденциальности</a>
@@ -587,6 +451,6 @@
   <span>Написать в Telegram</span>
 </a>
 
-<script src="script.js?v=3"></script>
+<script src="script.js?v=4"></script>
 </body>
 </html>

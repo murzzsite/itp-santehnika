@@ -15,7 +15,7 @@
   const burger = document.getElementById('burger');
   const nav = document.getElementById('nav');
   burger?.addEventListener('click', () => {
-    burger.classList.toggle('is-open');
+    burger.classList.toggle('is-open'); burger.setAttribute('aria-expanded', burger.classList.contains('is-open'));
     nav.classList.toggle('is-open');
   });
   nav?.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
@@ -90,34 +90,4 @@
       window.scrollTo({ top, behavior: 'smooth' });
     });
   });
-
-  // Reveal on scroll
-  const targets = document.querySelectorAll(
-    '.srv, .offer-card, .tariff, .step, .versus__col, .contact-card, .faq__item, .form, .stat, .furniture-row, .aud__item, .incl__card'
-  );
-  targets.forEach(el => el.classList.add('reveal'));
-  const io = new IntersectionObserver(entries => {
-    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); } });
-  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-  targets.forEach(el => io.observe(el));
-
-  // Counters
-  const counters = document.querySelectorAll('[data-target]');
-  const countIO = new IntersectionObserver(entries => {
-    entries.forEach(e => {
-      if (!e.isIntersecting) return;
-      const el = e.target;
-      const target = parseInt(el.dataset.target, 10);
-      if (Number.isNaN(target)) return;
-      const dur = 1100, start = performance.now();
-      const tick = t => {
-        const p = Math.min(1, (t - start) / dur);
-        el.textContent = Math.round(target * (1 - Math.pow(1 - p, 3)));
-        if (p < 1) requestAnimationFrame(tick);
-      };
-      requestAnimationFrame(tick);
-      countIO.unobserve(el);
-    });
-  }, { threshold: 0.4 });
-  counters.forEach(el => countIO.observe(el));
 })();
